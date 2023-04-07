@@ -1,0 +1,78 @@
+.idiomas{
+    display: flex;
+    flex-direction: column;
+}
+
+.idiomas-body{
+    background-color: var(--secundary-color);
+    color: var(--text-color-inverse);
+}
+
+.onda{
+    width: 100%;
+    position: relative;
+    top: 2px;
+}
+
+
+
+.idiomas-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+
+.idioma-nombre{
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.idioma-avance{
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color-inverse);
+    margin-top: 10px;
+}
+
+.idioma{
+    padding: 0;
+}
+
+.idiomas-grid{
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.line{
+    background-color: var(--text-color-inverse);
+    position: relative;
+}
+
+.line::before, .line::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+}
+
+.line::after{
+    top: 100%;
+    z-index: 1;
+}
